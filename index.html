@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Licznik odwiedzin i kliknięć</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Statystyki strony</h1>
+    
+    <div class="counters">
+      <p id="Odwiedziny">Liczba odwiedzin: 0</p>
+      <p id="Klikniecia">Kliknięcia (w tej sesji): 0</p>
+    </div>
+
+    <div class="click-area" id="clickArea">
+      <button id="mainButton">Kliknij mnie!</button>
+    </div>
+
+    <div class="history">
+      <h2>Historia sesji</h2>
+      <ul id="sessionHistory"></ul>
+    </div>
+
+    <div class="reset-buttons">
+      <button onclick="resetujWszystko()">Resetuj wszystko</button>
+      <button onclick="resetujOdwiedziny()">Resetuj odwiedziny</button>
+      <button onclick="resetujKlikniecia()">Resetuj kliknięcia</button>
+      <button onclick="resetujHistorie()">Resetuj historię</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

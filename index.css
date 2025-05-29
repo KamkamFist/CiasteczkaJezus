@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2a4365;
+}
+
+.counters p {
+  font-size: 1.2em;
+}
+
+.click-area {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#mainButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+
+.history {
+  margin-top: 20px;
+}
+
+#sessionHistory {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f7fafc;
+}
+
+#sessionHistory li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.reset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset-buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e53e3e;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
