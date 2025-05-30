@@ -5,7 +5,6 @@ function zapiszCiasteczko(nazwa, wartosc, dni = 365) {
   document.cookie = `${nazwa}=${JSON.stringify(wartosc)};expires=${data.toUTCString()};path=/`;
 }
 
-
 function pobierzCiasteczko(nazwa) {
   const dopasuj = document.cookie.match(new RegExp("(^| )" + nazwa + "=([^;]+)"));
   return dopasuj ? JSON.parse(dopasuj[2]) : null;
@@ -15,7 +14,6 @@ function pobierzCiasteczko(nazwa) {
 let odwiedziny = pobierzCiasteczko("odwiedziny") || 0;
 let klikniecia = parseInt(sessionStorage.getItem("klikniecia")) || 0;
 let historia = pobierzCiasteczko("historia") || [];
-
 
 odwiedziny++;
 zapiszCiasteczko("odwiedziny", odwiedziny);
